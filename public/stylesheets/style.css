@@ -8,8 +8,14 @@ a {
 }
 
 table {
-  width: 70%;
+  width: 100%;
   border-collapse: collapse;
+}
+td:nth-child(3) {
+  width: 50%
+}
+td:nth-child(4) {
+  width: 25%
 }
 
 th, td {
