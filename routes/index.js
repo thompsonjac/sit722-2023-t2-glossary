@@ -61,9 +61,37 @@ const itemList = [
   'reference':'M. Krief, Learning DevOps - Second Edition, Packt Publishing, 2022.'},
   {'id':20,'title':'Continuous Deployment',
   'description':'Continuous Deployment an advanced software development practice where code changes that pass the automated tests in the Continuous Delivery stage are automatically deployed to the production environment. By eliminating this manual step automated deployment enables rapid and continuous software releases and reduces the time between code changes and their availability to end-users. This streamlined approach ensures that every successful code change seamlessly and efficiently reaches production, optimising the software delivery cycle.',
-  'reference':'M. Krief, Learning DevOps - Second Edition, Packt Publishing, 2022.'}
-
-  
+  'reference':'Red Hat, Inc, “What is Infrastructure as Code (IaC)?,” May 11 2022. [Online]. Available: https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac#:~:text=Infrastructure%20as%20Code%20(IaC)%20is,to%20edit%20and%20distribute%20configurations.. [Accessed 2023 August 25].'},
+  {'id':21,'title':'Infrastructure as Code',
+  'description':'Infrastructure as Code (IaC) is a practice where infrastructure configuration is managed and provisioned through code and automation tools, enabling consistent and repeatable setup of servers, networks, and other IT resources.',
+  'reference':'M. Krief, Learning DevOps - Second Edition, Packt Publishing, 2022.'},
+  {'id':22,'title':'Containers',
+  'description':'Containers are lightweight, isolated environments that package applications and their dependencies together, ensuring consistent behaviour across different computing environments and enabling efficient deployment and scaling.',
+  'reference':'Docker Inc., “Use containers to Build, Share and Run your applications,” 2023. [Online]. Available: https://www.docker.com/resources/what-container/. [Accessed 25 August 2023].'},
+  {'id':23,'title':'Virtual Machine',
+  'description':'A virtual machine (VM) is a software-based emulation of a physical computer, allowing multiple operating systems to run on a single physical machine, each isolated and independent from the others. This enables the simultaneous operation of multiple operating systems on a single physical host, allowing for isolated and resource-controlled computing environments. ',
+  'reference':'VMWare, Inc., “What is a Virtual Machine?,” 2023. [Online]. Available: https://www.vmware.com/au/topics/glossary/content/virtual-machine.html. [Accessed 25 August 2023].'},
+  {'id':24,'title':'Docker',
+  'description':'Docker simplifies application deployment using containers. It packages an application and its dependencies into a portable, reproducible unit. Docker containers ensure consistent behaviour from development to production, streamlining development workflows and enhancing scalability.',
+  'reference':'Docker Inc, “Docker overview,” 2023. [Online]. Available: https://docs.docker.com/get-started/overview/. [Accessed 25 August 2023].'},
+  {'id':25,'title':'Kubernetes',
+  'description':'Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications, ensuring high availability, fault tolerance, and easy scaling.',
+  'reference':'The Kubernetes Authors, “Kubernates Overview,” 12 July 2023. [Online]. Available: https://kubernetes.io/docs/concepts/overview/. [Accessed 25 August 2023].'},
+  {'id':26,'title':'Azure Storage',
+  'description':'Azure Storage is a cloud-based storage service provided by Microsoft Azure, offering scalable and highly available storage solutions for various data types, including blobs, files, queues, tables, and disks.',
+  'reference':'Microsoft, “Introduction to Azure Storage,” 3 August 2023. [Online]. Available: https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction. [Accessed 25 August 2023].'},
+  {'id':27,'title':'Cloud-native Applications',
+  'description':'Cloud-native applications are designed and built to fully leverage the advantages of cloud computing, utilizing microservices architecture, scalability, and elasticity, and often being containerized for easy deployment.',
+  'reference':'Red Hat, Inc., “Understanding cloud-native applications,” 10 May 2022. [Online]. Available: https://www.redhat.com/en/topics/cloud-native-apps#:~:text=Cloud%2Dnative%20applications%20are%20a,user%20feedback%20for%20continuous%20improvement.. [Accessed 25 August 2023].'},
+  {'id':28,'title':'Docker Compose',
+  'description':'Docker Compose is a tool that allows you to define and manage multi-container applications using a single YAML file, making it easier to set up and coordinate the interactions between different containers.',
+  'reference':'Docker Inc., “Use Docker Compose,” 2023. [Online]. Available: https://docs.docker.com/get-started/08_using_compose/. [Accessed 25 August 2023].'},
+  {'id':29,'title':'YAML',
+  'description':'YAML (YAML Aint Markup Language) is a human-readable data serialization format often used for configuration files and data exchange between languages with different data structures, using indentation to define hierarchical relationships.',
+  'reference':'Red Hat, Inc., “What is YAML?,” 6 March 2023. [Online]. Available: https://www.redhat.com/en/topics/automation/what-is-yaml. [Accessed 25 August 2023].'},
+  {'id':30,'title':'JSON',
+  'description':'JSON (JavaScript Object Notation) is a lightweight data interchange format commonly used for transmitting data between a server and a web application, organized as key-value pairs and nested objects, and easily readable by both humans and machines.',
+  'reference':'M. Tyson, “What is JSON? The universal data format,” 26 August 2022. [Online]. Available: https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html. [Accessed 25 August 2023].'} 
 ]
 
 /* GET home page. */
