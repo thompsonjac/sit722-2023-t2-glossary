@@ -91,7 +91,37 @@ const itemList = [
   'reference':'Red Hat, Inc., “What is YAML?,” 6 March 2023. [Online]. Available: https://www.redhat.com/en/topics/automation/what-is-yaml. [Accessed 25 August 2023].'},
   {'id':30,'title':'JSON',
   'description':'JSON (JavaScript Object Notation) is a lightweight data interchange format commonly used for transmitting data between a server and a web application, organized as key-value pairs and nested objects, and easily readable by both humans and machines.',
-  'reference':'M. Tyson, “What is JSON? The universal data format,” 26 August 2022. [Online]. Available: https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html. [Accessed 25 August 2023].'} 
+  'reference':'M. Tyson, “What is JSON? The universal data format,” 26 August 2022. [Online]. Available: https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html. [Accessed 25 August 2023].'},
+  {'id':31,'title':'Volumes',
+  'description':'Volumes represent a data management strategy for containers and help persist data beyond the lifecycle of a container. Volumes facilitate data sharing between containers and provide a means to store critical application data, databases, or configuration files. ',
+  'reference':'Docker Inc., “Volumes,” 2023. [Online]. Available: https://docs.docker.com/storage/volumes/. [Accessed 9 September 2023].'},
+  {'id':32,'title':'Networking',
+  'description':'Networking encompasses the configuration, management, and optimisation of communication pathways between various software components, services, and infrastructure elements. This includes defining network architectures, specifying firewall rules, load balancing, and ensuring secure and efficient data flow. Effective networking practices are essential for building robust, highly available, and performant systems.',
+  'reference':'Docker Inc., “Networking overview,” 2023. [Online]. Available: https://docs.docker.com/network/. [Accessed 6 September 2023].'},
+  {'id':33,'title':'Bridge Network',
+  'description':'These networks are localised, private network created to facilitate communication between containers residing on the same host. They isolate containers from external networks, enhancing security by creating a controlled communication environment. Bridge networks are crucial for microservice architectures and enable discrete container interactions while preventing unauthorised external access.',
+  'reference':'Docker Inc., “Bridge network driver,” 2023. [Online]. Available: https://docs.docker.com/network/drivers/bridge/. [Accessed 6 September 2023].'},
+  {'id':34,'title':'Overlay Network',
+  'description':'Overlay networks are designed to support communication between containers running on different hosts or nodes in a cluster. Overlay networks are fundamental to container orchestration platforms like Kubernetes and Docker Swarm, allowing containers to communicate seamlessly across nodes while abstracting the underlying network complexity. ',
+  'reference':'Docker Inc., “Overlay Network Driver,” 2023. [Online]. Available: https://docs.docker.com/network/drivers/overlay/. [Accessed 6 September 2023].'},
+  {'id':35,'title':'Macvlan Network',
+  'description':'Macvlan networks assign a unique MAC address to each container, enabling them to function as individual entities on the network. This approach is useful when containers require direct access to specific network resources or when they need to appear as separate devices on the network. Macvlan networks provide a high level of network isolation and are commonly used in advanced DevOps scenarios.',
+  'reference':'Docker Inc., “Macvlan Network Driver,” 2023. [Online]. Available: https://docs.docker.com/network/drivers/macvlan/. [Accessed 6 September 2023].'},
+  {'id':36,'title':'Direct Messaging',
+  'description':'Direct messaging involves one-to-one communication between software components. It serves as a means for quick and specific exchanges of information, notifications, or instructions. ',
+  'reference':'Microsoft, “Communication in a microservice architecture,” 13 April 2022. [Online]. Available: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture. [Accessed 6 September 2023].'},
+  {'id':37,'title':'Indirect Messaging',
+  'description':'Indirect messaging refers to one-to-many communication mechanisms, typically facilitated by messaging systems or notification platforms. These systems distribute information, alerts, or updates to multiple recipients or systems simultaneously. ',
+  'reference':'Microsoft, “Communication in a microservice architecture,” 13 April 2022. [Online]. Available: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture. [Accessed 6 September 2023].'},
+  {'id':38,'title':'Kubernates Pod',
+  'description':'A Kubernetes Pod represents the smallest deployable unit within a Kubernetes cluster. It can consist of one or more containers that share the same network namespace, storage, and lifecycle. Pods serve as the foundational building blocks for deploying and managing containerised applications in Kubernetes, ensuring tight coupling when necessary and facilitating resource sharing.',
+  'reference':'The Kubernates Authors, “Pods,” 24 August 2023. [Online]. Available: https://kubernetes.io/docs/concepts/workloads/pods/. [Accessed 6 September 2023].'},
+  {'id':39,'title':'Kubernates Control Plane',
+  'description':'The Kubernetes Control Plane represent the core components responsible for managing the orchestration and coordination of containers within a Kubernetes cluster. It includes components such as the API server, etcd for distributed configuration data storage, and the controller manager. The Control Plane ensures that the desired state of applications and infrastructure is maintained, enabling scaling, resilience, and efficient resource allocation.',
+  'reference':'The Kubernetes Authors, “Kubernetes Components,” 12 July 2023. [Online]. Available: https://kubernetes.io/docs/concepts/overview/components/. [Accessed 6 September 2023].'},
+  {'id':40,'title':'Terraform',
+  'description':'Terraform is an open-source infrastructure as code (IaC) tool. It allows developers to define infrastructure resources and their configurations using declarative code. Terraform then automates the provisioning and management of these resources across various cloud providers or on-premises environments. DevOps practitioners use Terraform to establish consistent, version-controlled, and repeatable infrastructure setups, enhancing the reliability and scalability of applications.',
+  'reference':'Hashicorp, Inc., “What is Terraform?,” 24 February 2023. [Online]. Available: https://developer.hashicorp.com/terraform/intro. [Accessed 6 September 2023].'}
 ]
 
 /* GET home page. */
@@ -100,7 +130,7 @@ router.get('/', function(req, res, next) {
     title: 'SIT722 DevOps Glossary', 
     subheading: 'Welcome to my website showing a collection of DevOps terms and their brief descriptions.', 
     items: itemList, 
-    disclaimer: 'All above terms were also researched through OpenAI ChatGPT so should be considered to have a reference of (Please tell me about [TERM], OpenAI ChatGPT, Private Communication, 20 July 2023) as well'});
+    disclaimer: 'All above terms were also researched through OpenAI ChatGPT so should be considered to have a reference of (Please tell me about [TERM], OpenAI ChatGPT, Private Communication, 20 July 2023) as well.'});
 });
 
 module.exports = router;
